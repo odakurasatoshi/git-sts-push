@@ -5,7 +5,33 @@
 <title th:text="${title}">Insert title here</title>
 </head>
 <body>
-  <h1 th:text="${title}"></h1>
-  <p>developBranche</p>
+ <form>
+  <label for="input">INPUT:</label>
+  <input type="text" id="input" th:value="${sampleForm.input}"> <br />
+  <div id="check-group">
+    <span>CHECK: </span>
+    <label for="checkbox1">1.</label>
+    <input type="checkbox" id="checkbox1" name="checkbox1">
+    <label for="checkbox2">2.</label>
+    <input type="checkbox" id="checkbox2" name="checkbox2">
+  </div>
+  <div id="radio-group">
+    <span>RADIO:</span>
+    <label for="radio1">1.</label>
+    <input type="radio" id="radio1" name="radio" value="1">
+    <label for="radio2">2.</label>
+    <input type="radio" id="radio2" name="radio" value="2">
+    <label for="radio3">3.</label>
+    <input type="radio" id="radio3" name="radio" value="3">
+  </div>
+  <label for="select">SELECT:</label>
+  <select id="select" name="select">
+    <option value="0">Value is 0</option>
+    <option value="1">Value is 1</option>
+    <option value="2">Value is 2</option>
+    <option value="3">Value is 3</option>
+    <option value="4">Value is 4</option>
+  </select>
+</form>
 </body>
 </html>
